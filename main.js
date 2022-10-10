@@ -119,7 +119,7 @@ const controller = {
   generateCards() {
     view.displayCards(utility.getRandomNumberArray(52))
   },
-  dispacthCardAction(card) {
+  dispatchCardAction(card) {
     if (!card.classList.contains('back')) {
       return
     }
@@ -185,9 +185,8 @@ controller.generateCards()
 //   })
 // })
 
-const cards = document.querySelector('#cards')
-cards.addEventListener('click', (event) => {
-  if (event.target.tagName === 'DIV') {
-    controller.dispacthCardAction(event.target)
-  }
+document.querySelectorAll('.card').forEach((card) => {
+  card.addEventListener('click', (event) => {
+    controller.dispatchCardAction(event.target)
+  })
 })
