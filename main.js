@@ -178,13 +178,6 @@ const model = {
 
 controller.generateCards()
 
-// Listen to each cards
-// document.querySelectorAll('.card').forEach((card) => {
-//   card.addEventListener('click', (event) => {
-//     console.log(card)
-//   })
-// })
-
 document.querySelectorAll('.card').forEach((card) => {
   card.addEventListener('click', (event) => {
     controller.dispatchCardAction(event.target)
