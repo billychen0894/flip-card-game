@@ -138,8 +138,7 @@ const controller = {
           // Matched
           view.renderScore((model.score += 10))
           this.currentState = GAME_STATE.CardsMatched
-          view.pairCards(model.revealedCards[0])
-          view.pairCards(model.revealedCards[1])
+          view.pairCards(...model.revealedCards)
           model.revealedCards = []
           if (model.score === 260) {
             this.currentState = GAME_STATE.GameFinished
