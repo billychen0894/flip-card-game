@@ -25,7 +25,7 @@ This is a game to test your memorization. Each pair of matched cards is 10 point
 
 ### What I learned
 
-##### MVC Design Pattern
+#### MVC Design Pattern
 
 MVC design pattern/architectural pattern is what I get the most out of this project.
 It really helped me thinking within a framework while I was building/coding along for this project. It makes the whole project really manageable.
